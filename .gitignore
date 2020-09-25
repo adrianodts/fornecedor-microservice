@@ -1,5 +1,9 @@
+HELP.md
 /target/
+target/
 !.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
@@ -9,7 +13,6 @@
 .settings
 .springBeans
 .sts4-cache
-
 
 # Created by https://www.gitignore.io/api/git,java,maven,eclipse,windows
 
@@ -83,6 +86,25 @@ local.properties
 
 .sts4-cache/
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
 ### Git ###
 # Created by git for backups. To disable backups in Git:
 # $ git config --global mergetool.keepBackup false
@@ -132,8 +154,12 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+mvnw
+mvnw.cmd
+.mvn/
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+
 
 ### Windows ###
 # Windows thumbnail cache files
